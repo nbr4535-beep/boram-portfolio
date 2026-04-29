@@ -1,34 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
-:root {
-  --bg: #f9f9f9;
-  --text-primary: #2f3334;
-  --text-secondary: #5e5f5f;
-  --accent: #9c4549;
-  --pink-light: #ffabaa;
-  --white: #ffffff;
-  --dark-card: #121212;
-}
-
-* {
+*, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
-  background: var(--bg);
-  font-family: 'Gmarket Sans', 'Apple SD Gothic Neo', sans-serif;
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
   -webkit-font-smoothing: antialiased;
-}
-
-@font-face {
-  font-family: 'Gmarket Sans';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Gmarket Sans';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
-  font-weight: 700;
 }
